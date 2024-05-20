@@ -1,1 +1,1 @@
-docker run -dit --name=locust -p 8089:8089 -v $PWD:/mnt/locust locustio/locust -f /mnt/locust/locustfile.py -H https://arcadia.f5poc.id --autostart
+docker run -dit --name=locust -p 8089:8089 -v $PWD:/mnt/locust locustio/locust -f /mnt/locust/locustfile.py -H https://arcadia.example.com --autostart
