@@ -14,7 +14,7 @@ class QuickstartUser(HttpUser):
         self.client.get("/trading/login.php")
         time.sleep(1)
         #auth login
-        self.client.post("/trading/auth.php", { 'username': 'matt', 'password': 'secret' })
+        self.client.post("/trading/auth.php", { 'username': 'username', 'password': 'yoursecret' })
         #buy f5 stock
         self.client.post("/trading/rest/buy_stocks.php", json={"trans_value":165,"qty":5,"company":"FFIV","action":"buy","stock_price":165})
         #sell f5 stock
